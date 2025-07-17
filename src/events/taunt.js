@@ -25,7 +25,7 @@ module.exports = {
         if (chance < 497) {
             return;
           } else {
-            message.channel.send(`${taunt}`);
+            message.channel.send(`<:Bouncer:1395295204163981404> ${taunt}`);
           };
     },
 };
