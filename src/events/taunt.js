@@ -5,7 +5,7 @@ module.exports = {
     async execute(message) {
 
         if (message.author.bot || !message.guild) return;
-        if (!message.guild.members.me.permissionsIn(message.channel.id).has(PermissionFlagsBits.SendMessages)) return;
+        
         const chance = Math.random() * 500;
         const taunts = [
           "YOU WON'T GET AWAY FROM ME THAT EASY, YE PILFERING PARASITES!",
@@ -25,7 +25,7 @@ module.exports = {
         if (chance < 497) {
             return;
           } else {
-            message.channel.send(`<:Bouncer:1395295204163981404> ${taunt}`);
+            message.channel.send(`<:Bouncer:1395295204163981404> ${taunt}`).catch((err) => {return});
           };
     },
 };
