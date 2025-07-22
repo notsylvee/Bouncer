@@ -39,5 +39,19 @@
         { "text": "Don't look so sour-faced now, lad! Ye fit right in!" },
         { "text": "Thank ye laddie. You may now, enjoy the party!" },
         { "text": "Ey!! Now yer followin' the dress code!" }
+    ],
+    "taunts": [
+        { "text": "Get out of here, sour-face." },
+        { "text": "WHAT ARE YE, A TWO TIMING TROGLODYTE? YOU'RE NOT PERMITTED INTO THIS PARTY!" },
+        { "text": "OH LOVELY! WE'RE DEALING WITH A MOR-OOOONNN!!! GET BACK HERE YE DEADBEAT!" },
+        { "text": "Come back when ye've learned to read, ya nimwit!" },
+        { "text": "And stay out, ye frollocking fleshbag!" },
+        { "text": "Now BEAT it! I don't wanna see ye again!" },
+        { "text": "YOU WON'T GET AWAY FROM ME THAT EASY, YE PILFERING PARASITES!" },
+        { "text": "GET BACK 'ERE', YOU RAT!" },
+        { "text": "COME HERE, YE PILFERING SWINE!" },
+        { "text": "YER NOTHING BUT A SOUR-BONED SASSONACK!" },
+        { "text": "TAKE THIS, YE BLOODY VERMIN!" },
+        { "text": "OPEN THE GATE! YE BLISTERING BARNACLES!" }
     ]
 }

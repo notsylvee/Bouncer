@@ -6,26 +6,16 @@ module.exports = {
 
         if (message.author.bot || !message.guild) return;
         
-        const chance = Math.random() * 500;
-        const taunts = [
-          "YOU WON'T GET AWAY FROM ME THAT EASY, YE PILFERING PARASITES!",
-          "GET BACK 'ERE', YOU RAT!",
-          "YER A GOWK FOR RUNNING, PAL!",
-          "COME HERE, YE PILFERING SWINE!",
-          "YER NOTHING BUT A SOUR-BONED SASSONACK!",
-          "TAKE THIS, YE BLOODY VERMIN!",
-          "OPEN THE GATE! YE BLISTERING BARNACLES!",
-          "Come back when ye've learned to read, ya nimwit!",
-          "And stay out, ye frollocking fleshbag!",
-          "WHAT ARE YE, A TWO TIMING TROGLODYTE? YOU'RE NOT PERMITTED INTO THIS PARTY!",
-          "OH LOVELY! WE'RE DEALING WITH A MOR-OOOONNN!!! GET BACK HERE YE DEADBEAT!",
-          "Get out of here, sour-face."
-        ];
+        const tauntsJsonData = await fs.readFile("data/taunts.json", {encoding: "utf8"});
+        const tauntsMap = JSON.parse(tauntsJsonData);
+        const taunts = tauntsMap["taunts"];
         const taunt = taunts[Math.floor(Math.random() * taunts.length)];
+
+        const chance = Math.random() * 500;
         if (chance < 497) {
             return;
           } else {
-            message.channel.send(`<:Bouncer:1395295204163981404> ${taunt}`).catch((err) => {return});
+            message.channel.send(`<:Bouncer:1395295204163981404> ${taunt.text}`).catch((err) => {return});
           };
     },
 };
